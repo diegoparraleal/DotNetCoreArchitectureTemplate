@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="MongoDb\DataProviders" />
+      <Folder Include="MongoDb\Repositories" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AseProject.Core\AseProject.Core.csproj" />
+      <ProjectReference Include="..\AseProject.Domain\AseProject.Domain.csproj" />
+      <ProjectReference Include="..\AseProject.Infrastructure.Contracts\AseProject.Infrastructure.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CSharpFunctionalExtensions" Version="2.29.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="JetBrains.Annotations">
+        <HintPath>..\..\..\.nuget\packages\jetbrains.annotations\2022.1.0\lib\netstandard2.0\JetBrains.Annotations.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
